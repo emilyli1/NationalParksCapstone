@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parks</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
+    <div class="navBar">
         <ul>
             <a href="index.html">Home</a>
             <a href="parks.html">Parks</a>
             <a href="mountains.html">Mountains</a>
         </ul>
-    
+    </div>
     </header>
 
-    
-        <FORM name="drop_list" action="yourpage.php" method="POST" >
-                
-        <SELECT  NAME="Month_list">
-        <!-- <Option value="" >National Parks</option> -->
-        </SELECT>
+    <div id="searchbar">
+    <input type="text">
+    <button class="button searchButton">Search</button>
+    </div> <br>
+
+        <form name="drop_list" action="yourpage.php" method="POST" >        
+        <SELECT  id="stateDropDown"></SELECT>
+        <select id="parkTypeDropDown"></select>
         </form>
-        <script src="/scripts/apps.js"></script>
+
+<script src="/scripts/locationData.js"></script>
+<script src="/scripts/parkTypeData.js"></script>
 </body>
 </html>
+
+<!--Nation Park pg that allows user to seatch for the park thats just right for them. Data is in nationParks.js-->

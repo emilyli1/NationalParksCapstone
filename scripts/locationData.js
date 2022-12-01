@@ -1,3 +1,12 @@
+function addOption(selectbox,text,value )
+{
+	var optn = document.createElement("OPTION");
+	optn.text = text;
+	optn.value = value;
+	selectbox.options.add(optn);
+}
+
+function addOption_list(){
 const locationsArray = [
     "Alabama",
     "Alaska",
@@ -55,3 +64,10 @@ const locationsArray = [
     "Wisconsin",
     "Wyoming"
 ]
+for (var i=0; i < locationsArray.length;++i){
+    addOption(document.drop_list.stateDropDown, locationsArray[i], locationsArray[i]);
+    }
+    
+}
+    
+addOption_list();

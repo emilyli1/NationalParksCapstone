@@ -528,3 +528,28 @@ const mountainsArray = [
         }
     }
 ]
+
+//Trying to display the data
+//right now it displays 1st mountain's name
+function displayMountain() {
+    //document.getElementById("mountains").innerHTML = mountainsArray[1].name;
+}
+displayMountain();
+
+//Attempt #2
+//need a loop + display function
+//displays all the objects in a row 
+function displayMountain1() {
+    //document.getElementById("mountains").innerHTML = Object.values(mountainsArray[1]);
+}
+displayMountain1();
+
+//Attempt #3
+// need a for function?
+//only prints the last mountain. 
+function displayMountain2() {
+    for (i = 0; i < mountainsArray.length; i++) {
+        document.getElementById("mountains").innerHTML = mountainsArray[i].name + mountainsArray[i].elevation + mountainsArray[i].effort + mountainsArray[i].img;
+    }
+}
+displayMountain2();
