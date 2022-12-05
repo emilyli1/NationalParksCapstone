@@ -1,3 +1,13 @@
+function mountainDropDown(selectbox,text,value )
+{
+	var optn = document.createElement("OPTION");
+	optn.text = text;
+	optn.value = value;
+	selectbox.options.add(optn);
+}
+
+function mountainDropDownList(){
+
 const mountainsArray = [
     {
         name: "Mt. Washington",
@@ -529,27 +539,52 @@ const mountainsArray = [
     }
 ]
 
+for (var i=0; i < mountainsArray.length;++i){
+    mountainDropDown(document.drop_list.mountainDropDown, mountainsArray[i].name);
+    }
+    
+}
+    
+mountainDropDownList();
+
+function displayMountain() {
+    
+}
 //Trying to display the data
 //right now it displays 1st mountain's name
-function displayMountain() {
-    //document.getElementById("mountains").innerHTML = mountainsArray[1].name;
-}
-displayMountain();
+// function displayMountain() {
+//     //document.getElementById("mountains").innerHTML = mountainsArray[1].name;
+// }
+// displayMountain();
 
-//Attempt #2
-//need a loop + display function
-//displays all the objects in a row 
-function displayMountain1() {
-    //document.getElementById("mountains").innerHTML = Object.values(mountainsArray[1]);
-}
-displayMountain1();
+// //Attempt #2
+// //need a loop + display function
+// //displays all the objects in a row 
+// function displayMountain1() {
+//     //document.getElementById("mountains").innerHTML = Object.values(mountainsArray[1]);
+// }
+// displayMountain1();
 
-//Attempt #3
-// need a for function?
-//only prints the last mountain. 
-function displayMountain2() {
-    for (i = 0; i < mountainsArray.length; i++) {
-        document.getElementById("mountains").innerHTML = mountainsArray[i].name + mountainsArray[i].elevation + mountainsArray[i].effort + mountainsArray[i].img;
-    }
-}
-displayMountain2();
+// //Attempt #3
+// // need a for function?
+// //only prints the last mountain. 
+// function displayMountain2() {
+//     for (i = 0; i < mountainsArray.length; i++) {
+//         document.getElementById("mountains").innerHTML = mountainsArray[i].name + mountainsArray[i].elevation + mountainsArray[i].effort + mountainsArray[i].img;
+//     }
+// }
+// displayMountain2();
+
+
+
+
+// const mountainDisplay = document.getElementById('mountainDisplay')[0];
+
+// mountainsArray.forEach((mountainsArray, index) => {
+//     let mountainP = document.createElement('p');
+//     let mountainPText = document.createTextNode
+//     (`Name: ${mountainsArray.name}Elevation: ${mountainsArray.elevation}Effort: ${mountainsArray.effort}`
+//     );
+//     mountainP.appendChild(mountainPText);
+//     mountainDisplay.appendChild(mountainP);
+// })
