@@ -1,12 +1,4 @@
-function mountainDropDown(selectbox,text,value )
-{
-	var optn = document.createElement("OPTION");
-	optn.text = text;
-	optn.value = value;
-	selectbox.options.add(optn);
-}
 
-function mountainDropDownList(){
 
 const mountainsArray = [
     {
@@ -539,31 +531,22 @@ const mountainsArray = [
     }
 ]
 
-for (var i=0; i < mountainsArray.length;++i){
-    mountainDropDown(document.drop_list.mountainDropDown, mountainsArray[i].name);
-    }
-    
-}
-    
-mountainDropDownList();
 
-function displayMountain() {
-    
-}
-//Trying to display the data
-//right now it displays 1st mountain's name
+
+
+//onclick to display the mountain info
+
+// let matching = [];
 // function displayMountain() {
-//     //document.getElementById("mountains").innerHTML = mountainsArray[1].name;
+//     for (let i = 0; i < mountainsArray.length; i++) {
+//         if (matching == mountainsArray[i])
+//         document.getElementById('mountains').innerHTML = `${mountainsArray[i].name}`;
+        
+//     }
 // }
-// displayMountain();
+   
 
-// //Attempt #2
-// //need a loop + display function
-// //displays all the objects in a row 
-// function displayMountain1() {
-//     //document.getElementById("mountains").innerHTML = Object.values(mountainsArray[1]);
-// }
-// displayMountain1();
+
 
 // //Attempt #3
 // // need a for function?
@@ -578,13 +561,6 @@ function displayMountain() {
 
 
 
-// const mountainDisplay = document.getElementById('mountainDisplay')[0];
 
-// mountainsArray.forEach((mountainsArray, index) => {
-//     let mountainP = document.createElement('p');
-//     let mountainPText = document.createTextNode
-//     (`Name: ${mountainsArray.name}Elevation: ${mountainsArray.elevation}Effort: ${mountainsArray.effort}`
-//     );
-//     mountainP.appendChild(mountainPText);
-//     mountainDisplay.appendChild(mountainP);
-// })
+
+     

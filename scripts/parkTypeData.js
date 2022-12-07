@@ -1,3 +1,4 @@
+//dropdown menu
 function addOption2(selectbox,text,value )
 {
 	var optn = document.createElement("OPTION");

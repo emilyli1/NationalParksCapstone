@@ -1,9 +1,13 @@
-.navBar {
-    background-color: #A3C9A8;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 0px 15px 80%;
-    margin-bottom: 10px;
+/* Nav bar */
+.myfooter {
+    text-align: center;
+}
+.navbar-expand-sm {
+    background-color: #a3c9a8;
+}
+.mynav {
+    color: black;
+    text-decoration: none;
 }
 body {
     background-color: #DDD8C4;
@@ -13,8 +17,20 @@ a {
     color: #50808E;
     padding-right: 25px;
 }
-.searchButton {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #A3C9A8;
-    border: none;
+
+/* Mountain cards */
+.mountain {
+    background-color: #69A297;
+}
+.mountain-photo {
+    margin: 10px;
+    width: 200px;
+    length: 250px; 
+
+}
+.mountain-name {
+    font-size: x-large;
+}
+.mountain-desc {
+    font-size: large;
 }
