@@ -1,5 +1,5 @@
 //dropdown menu
-function addOption2(selectbox,text,value )
+function parkTypeDropDown(selectbox,text,value )
 {
 	var optn = document.createElement("OPTION");
 	optn.text = text;
@@ -7,7 +7,7 @@ function addOption2(selectbox,text,value )
 	selectbox.options.add(optn);
 }
 
-function addOption_list2(){
+function parkTypeDropDownList(){
 
 const parkTypesArray = [
     "National Park",
@@ -25,9 +25,9 @@ const parkTypesArray = [
     "Parkway"
 ]
 for (var i=0; i < parkTypesArray.length;++i){
-    addOption2(document.drop_list.parkTypeDropDown, parkTypesArray[i], parkTypesArray[i]);
+    parkTypeDropDown(document.drop_list.parkTypeDropDown, parkTypesArray[i], parkTypesArray[i]);
     }
     
 }
     
-addOption_list2();
+parkTypeDropDownList();

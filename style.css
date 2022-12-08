@@ -3,14 +3,14 @@
     text-align: center;
 }
 .navbar-expand-sm {
-    background-color: #a3c9a8;
+    background-color: #50808E;
 }
 .mynav {
     color: black;
     text-decoration: none;
 }
 body {
-    background-color: #DDD8C4;
+    
 }
 a {
     text-decoration: none;
@@ -18,9 +18,28 @@ a {
     padding-right: 25px;
 }
 
+/*Home Page */
+
+/* carousel */
+#carouselId {
+   margin-left: 25%;
+    width: 1024px;
+   height: 640px;
+}
+.carousel-item {
+    width: 1024px;
+   height: 640px;
+}
+.carouselPicture {
+    width: 1024px;
+    height: 640px;
+}
 /* Mountain cards */
+#mountainDropDown {
+    width: 500px;
+}
 .mountain {
-    background-color: #69A297;
+    background-color: #DDD8C4;
 }
 .mountain-photo {
     margin: 10px;
@@ -33,4 +52,11 @@ a {
 }
 .mountain-desc {
     font-size: large;
+}
+
+/* Parks cards */
+
+/* Footer */
+footer {
+    background-color: #DDD8C4;
 }

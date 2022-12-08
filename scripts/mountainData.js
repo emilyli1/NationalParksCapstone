@@ -1,5 +1,4 @@
 
-
 const mountainsArray = [
     {
         name: "Mt. Washington",
@@ -530,36 +529,6 @@ const mountainsArray = [
         }
     }
 ]
-
-
-
-
-//onclick to display the mountain info
-
-// let matching = [];
-// function displayMountain() {
-//     for (let i = 0; i < mountainsArray.length; i++) {
-//         if (matching == mountainsArray[i])
-//         document.getElementById('mountains').innerHTML = `${mountainsArray[i].name}`;
-        
-//     }
-// }
-   
-
-
-
-// //Attempt #3
-// // need a for function?
-// //only prints the last mountain. 
-// function displayMountain2() {
-//     for (i = 0; i < mountainsArray.length; i++) {
-//         document.getElementById("mountains").innerHTML = mountainsArray[i].name + mountainsArray[i].elevation + mountainsArray[i].effort + mountainsArray[i].img;
-//     }
-// }
-// displayMountain2();
-
-
-
 
 
 

@@ -25,6 +25,7 @@ function loadData() {
            }
            down.innerHTML = "Elements Added";
  }
+
 mountainDropDownList();
 loadData();
 displayMountain();
@@ -42,26 +43,27 @@ function mountainTemplate(mountain) {
        
      `};
  
-   // save the selected option of dropdown into a variable.
-   // Loop over all the mountain data
-   // if Mountainame is equal to selected option
-   // Display mountain on screen
+
 
 function displayMountain() {
+  //saves drop down menu value
     let mydropdown = document.getElementById('mountainDropDown');
     let value = mydropdown.value;
     let  selectedOption = mydropdown.options[mydropdown.selectedIndex].text;
 
-
-   // let selectedOption = "Mt. Adams";
+  //filters the array to match value
     const filteredMountains = mountainsArray.filter(mountain => mountain.name === selectedOption);
 
 
    document.getElementById("mountains").innerHTML = `
-     <h1 class="app-title"> Mountains to Plan for Your Next Trip!</h1>
+     <h1 class="app-title"> Mountains to Plan for Your Next Trip</h1>
      ${filteredMountains.map(mountainTemplate).join("")}
-     <p class="footer">Book your next trip now.</p>
+     <p class="footer">Book your next trip now!</p>
    `;  
         
 }   
    
+   // save the selected option of dropdown into a variable.
+   // Loop over all the mountain data
+   // if Mountainame is equal to selected option
+   // Display mountain on screen

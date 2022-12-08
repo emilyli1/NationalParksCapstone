@@ -44,24 +44,32 @@
         </div>
       </div>
     </nav>
-    
+    <br>
   </header>
   <main>
         
-            <form name="drop_list" action="yourpage.php" method="POST" >        
-            <select  id="stateDropDown"></select>
-            <select id="parkTypeDropDown"></select>
+    <!--This is my Drop Down Menu for the States and Park Types -->
+    
+              
+  <form name="drop_list">
+            <select  id="stateDropDown" onchange="filterParksByState()"></select>
+            <select id="parkTypeDropDown" onchange="filterParksByType()"></select>
+
+
             </form>
-        
-        <script src="/scripts/locationData.js"></script>
-        <script src="/scripts/parkTypeData.js"></script>  
-        <script src="/scripts/nationalParkData.js"></script>
+            <div id="parks"></div>
+           
+
+
+
+
 </main>
   <footer>
-
+     <script src="/scripts/locationData.js"></script> 
+     <script src="/scripts/appLocationData.js"></script> 
+    <script src="/scripts/parkTypeData.js"></script>  
+    <script src="/scripts/nationalParkData.js"></script>
   </footer>
-  <script src="https://kit.fontawesome.com/5c792dea7a.js" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
