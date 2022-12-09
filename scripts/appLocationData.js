@@ -77,47 +77,45 @@ function loadNationalParkDropDownlist() {
 
 }   
 
-   // save the selected option of dropdown into a variable.
-   // Loop over all the mountain data
-   // if Mountainame is equal to selected option
-   // Display mountain on screen
-//I WILL NEED A FUNCTION TO DISPLAY THE PARKS
+
 
 //Executing Functions
 loadParkStateDropDownList();
 loadNationalParkDropDownlist();
 filterParksByState();
 filterParksByType();
-        
+
+// Template for Cards
 function parksTemplate(park) {
    return  `<div class="parks">
           <h2 class="location-name"> ${park.LocationName}</h2>
-          <h4 class="park-address"> ${park.Address}</h4>
-         <h4 class="park-city"> ${park.City}</h4>
-         <h4 class="park-state"> ${park.State}</h4> 
-         <h4 class="park-type"> ${park.Location.type}</h4>       
+          <h3 class="park-address"> Address: ${park.Address}</h3>
+         <h3 class="park-city"> ${park.City}, ${park.State} ${park.ZipCode}</h3> 
+         <h6 class="park-lang"> ${park.Latitude}, ${park.Longitude}</h6>       
         </div>
         `};
 
+//filters state and compares w/ drop down menu
 
    function filterParksByState() {
     const selectedMountainFromDropdown = document.getElementById("stateDropDown").value;
     const filteredParks = nationalParksArray.filter(park => park.State === selectedMountainFromDropdown);
     document.getElementById("parks").innerHTML = filteredParks.map(parksTemplate);
- 
 
    }
 
+   // Function to display Parks by park types 
 function filterParksByType() {
-  
-}  
+    const filteredByType = []; 
+    //grabs value from drop down
+    const MountainFromDropdown = document.getElementById("parkTypeDropDown").value;
 
-//filteredparks make sure it works
-//find out why its refreshing
-
-// for (let park of nationalParksArray) {
-//     if ( park.LocationName.indexOf(parkTypeDropDown.value) != -1 && parkTypeDropDown != "")
-//     {
-//         document.getElementById("parks").innerHTML = parkTypeDropDown.value.map(parksTemplate);
-//     }
-// }
+    // loops through the nationalParksArray 
+    for (let i = 0; i < nationalParksArray.length; i++) {
+        // asks if nationalParksArray.LocationName, if it includes the word from Drop Down, it returns true.
+        if (nationalParksArray[i].LocationName.includes(MountainFromDropdown) == true) {
+            filteredByType.push(nationalParksArray[i]);
+        }
+    }
+    document.getElementById("parks").innerHTML = filteredByType.map(parksTemplate);
+}

@@ -55,7 +55,7 @@ function displayMountain() {
 
 
    document.getElementById("mountains").innerHTML = `
-     <h1 class="app-title"> Mountains to Plan for Your Next Trip</h1>
+     <h1 class="app-title"> Mountains To Visit On Your Next Trip</h1>
      ${filteredMountains.map(mountainTemplate).join("")}
      <p class="footer">Book your next trip now!</p>
    `;  

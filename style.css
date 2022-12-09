@@ -9,6 +9,13 @@
     color: black;
     text-decoration: none;
 }
+.btn-primary {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #50808E;
+    border-color: #a3c9a8;
+    color: #a3c9a8;
+}
+/* main tag css */
 body {
     
 }
@@ -17,12 +24,14 @@ a {
     color: #50808E;
     padding-right: 25px;
 }
-
+h1 {
+    margin: 10px;
+}
 /*Home Page */
 
 /* carousel */
 #carouselId {
-   margin-left: 25%;
+   margin-left: 20%;
     width: 1024px;
    height: 640px;
 }
@@ -35,10 +44,14 @@ a {
     height: 640px;
 }
 
-/* Mountain cards */
+/* Mountain Page */
+
+/*mountain drop down */
 #mountainDropDown {
     width: 500px;
 }
+
+/* mountain cards */
 .mountain {    
     max-width: 650px;
     padding: 20px;
@@ -60,15 +73,50 @@ a {
     display: block;
     font-size: large;
 }
+.app-title {
+    color: white;
+}
+.footer {
+    color: white;
+}
+/* Parks Page */ 
 
-/* Parks cards */
+/* Parks dropdown */
+#stateDropDown {
+    width: 250px;
+}
+#parkTypeDropDown {
+    width: 250px;
+}
+/* park cards */
 .parks {
+    width: 750px;
     background-color: #DDD8C4;
 }
-#dropDownPark {
-    
+.location-name {
+    margin-left: 5px;
+    font-size: x-large;
+}
+.park-address {
+    font-size: larger;
+    margin-left: 5px;
+}
+.park-city {
+    font-size: larger;
+    margin-left: 5px;
+}
+.park-lang {
+    margin-left: 5px;
 }
 /* Footer */
-footer {
+#socials {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     background-color: #DDD8C4;
+}
+.fa-brands {
+    margin-top: 15px;
+    margin-left: 15px;
 }
