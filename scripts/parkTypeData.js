@@ -29,5 +29,5 @@ for (var i=0; i < parkTypesArray.length;++i){
     }
     
 }
-    
+//execute functions
 parkTypeDropDownList();

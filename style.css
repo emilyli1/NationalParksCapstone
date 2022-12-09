@@ -44,6 +44,11 @@ h1 {
     height: 640px;
 }
 
+.aboutUs {
+    width: 90%;
+    margin-left: 10px;
+}
+
 /* Mountain Page */
 
 /*mountain drop down */
@@ -108,6 +113,7 @@ h1 {
 .park-lang {
     margin-left: 5px;
 }
+
 /* Footer */
 #socials {
     position: fixed;

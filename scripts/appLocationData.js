@@ -106,6 +106,7 @@ function parksTemplate(park) {
 
    // Function to display Parks by park types 
 function filterParksByType() {
+    //empty array
     const filteredByType = []; 
     //grabs value from drop down
     const MountainFromDropdown = document.getElementById("parkTypeDropDown").value;
@@ -114,8 +115,11 @@ function filterParksByType() {
     for (let i = 0; i < nationalParksArray.length; i++) {
         // asks if nationalParksArray.LocationName, if it includes the word from Drop Down, it returns true.
         if (nationalParksArray[i].LocationName.includes(MountainFromDropdown) == true) {
+            //puts it into a new array
             filteredByType.push(nationalParksArray[i]);
+            
         }
     }
+    //printing out the new array
     document.getElementById("parks").innerHTML = filteredByType.map(parksTemplate);
 }

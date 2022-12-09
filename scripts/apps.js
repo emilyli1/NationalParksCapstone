@@ -62,7 +62,3 @@ function displayMountain() {
         
 }   
    
-   // save the selected option of dropdown into a variable.
-   // Loop over all the mountain data
-   // if Mountainame is equal to selected option
-   // Display mountain on screen
