@@ -105,17 +105,19 @@ function parksTemplate(park) {
     const filteredParks = nationalParksArray.filter(park => park.State === selectedMountainFromDropdown);
     document.getElementById("parks").innerHTML = filteredParks.map(parksTemplate);
  
-//     document.getElementById("parks").innerHTML = `
-//     <h1 class="park-title"> Parks to Visit for Your Next Trip!</h1>
-//     ${filteredParks.map(parksTemplate).join("")}
-//     <p class="footer">Book your next trip now.</p>
-//    `; 
+
+   }
+
 function filterParksByType() {
-    const selectedParkFromDropdown = document.getElementById("parkTypeDropDown").value;
-    const filteredPark = nationalParksArray.filter(park => park.Location.type === selectedParkFromDropdown);
-    document.getElementById("parks").innerHTML = filteredPark.map(parksTemplate);
+  
 }  
-}
+
 //filteredparks make sure it works
 //find out why its refreshing
 
+// for (let park of nationalParksArray) {
+//     if ( park.LocationName.indexOf(parkTypeDropDown.value) != -1 && parkTypeDropDown != "")
+//     {
+//         document.getElementById("parks").innerHTML = parkTypeDropDown.value.map(parksTemplate);
+//     }
+// }

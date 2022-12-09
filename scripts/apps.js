@@ -30,9 +30,8 @@ mountainDropDownList();
 loadData();
 displayMountain();
 
+//Template on how the mountain data would display
 function mountainTemplate(mountain) {
-    // Mocking the data selecting a sample
-
      return `
        <div class="mountain">
        <img class="mountain-photo" src="images/${mountain.img}">

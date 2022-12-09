@@ -34,28 +34,40 @@ a {
     width: 1024px;
     height: 640px;
 }
+
 /* Mountain cards */
 #mountainDropDown {
     width: 500px;
 }
-.mountain {
+.mountain {    
+    max-width: 650px;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     background-color: #DDD8C4;
 }
 .mountain-photo {
     margin: 10px;
+    float:inline-start;
     width: 200px;
     length: 250px; 
-
 }
 .mountain-name {
     font-size: x-large;
 }
 .mountain-desc {
+    display: block;
     font-size: large;
 }
 
 /* Parks cards */
-
+.parks {
+    background-color: #DDD8C4;
+}
+#dropDownPark {
+    
+}
 /* Footer */
 footer {
     background-color: #DDD8C4;
